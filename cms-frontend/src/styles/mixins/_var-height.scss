@@ -1,0 +1,54 @@
+@mixin vh-height($vh, $value: 0) {
+  @if $value == 0 {
+    height: #{$vh}vh;
+  } @else {
+    height: calc(#{$vh}vh + #{$value});
+  }
+}
+
+@mixin vh-min-height($vh, $value: 0) {
+  @if $value == 0 {
+    min-height: #{$vh}vh;
+  } @else {
+    min-height: calc(#{$vh}vh + #{$value});
+  }
+}
+
+@mixin vh-max-height($vh, $value: 0) {
+  @if $value == 0 {
+    max-height: #{$vh}vh;
+  } @else {
+    max-height: calc(#{$vh}vh + #{$value});
+  }
+}
+
+
+@mixin var-height($vh, $value: 0) {
+  @include vh-height($vh, $value);
+
+  @if $value == 0 {
+    height: calc((var(--vh, 1vh) * #{$vh}));
+  } @else {
+    height: calc((var(--vh, 1vh) * #{$vh}) + #{$value});
+  }
+}
+
+@mixin var-min-height($vh, $value: 0) {
+  @include vh-min-height($vh, $value);
+
+  @if $value == 0 {
+    min-height: calc((var(--vh, 1vh) * #{$vh}));
+  } @else {
+    min-height: calc((var(--vh, 1vh) * #{$vh}) + #{$value});
+  }
+}
+
+@mixin var-max-height($vh, $value: 0) {
+  @include vh-max-height($vh, $value);
+
+  @if $value == 0 {
+    max-height: calc((var(--vh, 1vh) * #{$vh}));
+  } @else {
+    max-height: calc((var(--vh, 1vh) * #{$vh}) + #{$value});
+  }
+}

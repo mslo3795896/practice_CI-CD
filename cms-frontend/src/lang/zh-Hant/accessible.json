@@ -1,0 +1,16 @@
+{
+  "GO_TO_CENTER": "跳到主要內容",
+  "BLOCK_T_TOP_MENU": "上方選單連結區，此區塊列有本網站的主要連結",
+  "BLOCK_C_MAIN_CONTENT": "中間主要內容區，此區塊呈現網頁的網頁內容",
+  "BLOCK_Z_FOOTER": "下方選單連結區，此區塊列有[意見信箱]、[資訊安全政策]、[隱私權政策]等連結",
+  "BACK_TO_TOP": "回到頂部",
+  "LINK_TARGET_BLANK_TITLE_SUFFIX": "{title}(另開新視窗)",
+  "LINK_SITE_MAP_TEXT": "網站導覽",
+  "LINK_SITE_MAP_TITLE": "提供瞭解網站整體架構及鍵盤快捷鍵",
+  "FONT_SIZE_LARGER": "大",
+  "FONT_SIZE_LARGER_TITLE": "大字級",
+  "FONT_SIZE_NORMAL": "中",
+  "FONT_SIZE_NORMAL_TITLE": "中字級",
+  "FONT_SIZE_SMALLER": "小",
+  "FONT_SIZE_SMALLER_TITLE": "小字級"
+}

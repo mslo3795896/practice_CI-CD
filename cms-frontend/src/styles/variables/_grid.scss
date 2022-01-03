@@ -1,0 +1,85 @@
+// ===
+// Grid
+// ===
+$grid-breakpoint-map: (
+  xs: 0,
+  ssm: 322px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1500px,
+  xxl: 1920px,
+) !default;
+
+// ===
+// Container
+// ===
+$container-gap: 24px;
+$container: 1194px + ($container-gap * 2);
+$container-map: (
+  "callback": 582px + ($container-gap * 2),
+  "form": 460px + ($container-gap * 2),
+);
+
+// ===
+// Section
+// ===
+$section-padding: 100px;
+$section-padding-lg: 40px;
+$section-padding-md: 40px;
+
+// ===
+// Spacer
+// ===
+$spacer: 1rem !default;
+$spacer-map: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+) !default;
+
+$negative-spacer-map: negativify-map($spacer-map) !default;
+
+// ===
+// Grid
+// ===
+$grid-columns: 12 !default;
+$grid-gutter-width: 1.875rem !default;
+$grid-row-columns: 6 !default;
+
+$gutters: $spacer-map !default;
+
+// ===
+// Position
+// ===
+$position-value-map: (
+  0: 0,
+  50: 50%,
+  100: 100%
+) !default;
+
+// ===
+// Border
+// ===
+$border-width-map: (
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  5: 5px
+) !default;
+
+$border-radius: .25rem !default;
+$border-radius-sm: .2rem !default;
+$border-radius-lg: .3rem !default;
+$border-radius-pill: 50rem !default;
+
+// ===
+// Line Height
+// ===
+$line-height-sm: 1.25 !default;
+$line-height-base: 1.5 !default;
+$line-height-lg: 2 !default;

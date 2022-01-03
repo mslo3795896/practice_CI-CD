@@ -1,0 +1,14 @@
+@mixin list-unstyled() {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+@mixin link-unstyled() {
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+}
+
+// stylelint-disable-next-line block-no-empty
+@mixin unstyled() {}

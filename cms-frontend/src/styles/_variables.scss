@@ -1,0 +1,24 @@
+// ===
+// Mixins
+// ===
+@import "mixins/breakpoints";
+@import "mixins/capitalize";
+@import "mixins/functions";
+@import "mixins/grid";
+@import "mixins/line-clamp";
+@import "mixins/map-reverse";
+@import "mixins/unstyled";
+@import "mixins/var-height";
+@import "mixins/theme";
+// ===
+// Variables
+// ===
+@import 'variables/color';
+@import 'variables/fonts';
+@import 'variables/grid';
+@import 'variables/z-index';
+// ===
+// Fonts
+// ===
+
+$variable-prefix: ip- !default;

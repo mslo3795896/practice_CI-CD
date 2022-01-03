@@ -1,0 +1,69 @@
+// stylelint-disable scss/dollar-variable-pattern
+
+// ===
+// Theme
+// ===
+$color-primary: #ABCD03;
+$color-primary-dark: #60A32F;
+$color-qwe: #0b23da;
+
+
+// ===
+// Grayscale
+// ===
+$color-gray-1: #FFF;
+$color-gray-2: #F5F5F5;
+$color-gray-3: #E2E4E8;
+$color-gray-4: #B1BACB;
+$color-gray-5: #8C97AC;
+$color-gray-6: #525A67;
+$color-gray-7: #1D293F;
+
+// ===
+// Line
+// ===
+$color-line: #D6D6D6;
+
+// ===
+// State
+// ===
+$color-success: #60A32F;
+$color-warning: #F09B0E;
+$color-danger: #ED1212;
+$color-info: #909399;
+$color-complete: #0A89AF;
+
+// ===
+// Body
+// ===
+$color-body: $color-gray-7;
+$color-bg-body: #FFF;
+
+// ===
+// Body
+// ===
+$color-bg-default: transparent;
+
+// ===
+// Color
+// ===
+$color-theme-map: (
+  "primary": $color-primary,
+  "primary-dark": $color-primary-dark,
+  "gray-1": $color-gray-1,
+  "gray-2": $color-gray-2,
+  "gray-3": $color-gray-3,
+  "gray-4": $color-gray-4,
+  "gray-5": $color-gray-5,
+  "gray-6": $color-gray-6,
+  "gray-7": $color-gray-7,
+  "white": #FFF,
+  "success": $color-success,
+  "warning": $color-warning,
+  "danger": $color-danger,
+  "info": $color-info,
+  "complete": $color-complete,
+  "transparent": transparent,
+);
+
+$color-autofill: lighten($color-primary, 40%);

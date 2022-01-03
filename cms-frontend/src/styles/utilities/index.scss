@@ -1,0 +1,604 @@
+$utilities: (
+  // ===
+  // Margin
+  // ===
+  "margin": (
+    responsive: true,
+    property: margin,
+    class: m,
+    values: map-merge($spacer-map, (auto: auto))
+  ),
+  "margin-x": (
+    responsive: true,
+    property: margin-right margin-left,
+    class: mx,
+    values: map-merge($spacer-map, (auto: auto))
+  ),
+  "margin-y": (
+    responsive: true,
+    property: margin-top margin-bottom,
+    class: my,
+    values: map-merge($spacer-map, (auto: auto))
+  ),
+  "margin-top": (
+    responsive: true,
+    property: margin-top,
+    class: mt,
+    values: map-merge($spacer-map, (auto: auto))
+  ),
+  "margin-right": (
+    responsive: true,
+    property: margin-right,
+    class: mr,
+    values: map-merge($spacer-map, (auto: auto))
+  ),
+  "margin-bottom": (
+    responsive: true,
+    property: margin-bottom,
+    class: mb,
+    values: map-merge($spacer-map, (auto: auto))
+  ),
+  "margin-left": (
+    responsive: true,
+    property: margin-left,
+    class: ml,
+    values: map-merge($spacer-map, (auto: auto))
+  ),
+  "negative-margin": (
+    responsive: true,
+    property: margin,
+    class: m,
+    values: $negative-spacer-map
+  ),
+  "negative-margin-x": (
+    responsive: true,
+    property: margin-right margin-left,
+    class: mx,
+    values: $negative-spacer-map
+  ),
+  "negative-margin-y": (
+    responsive: true,
+    property: margin-top margin-bottom,
+    class: my,
+    values: $negative-spacer-map
+  ),
+  "negative-margin-top": (
+    responsive: true,
+    property: margin-top,
+    class: mt,
+    values: $negative-spacer-map
+  ),
+  "negative-margin-right": (
+    responsive: true,
+    property: margin-right,
+    class: mr,
+    values: $negative-spacer-map
+  ),
+  "negative-margin-bottom": (
+    responsive: true,
+    property: margin-bottom,
+    class: mb,
+    values: $negative-spacer-map
+  ),
+  "negative-margin-left": (
+    responsive: true,
+    property: margin-left,
+    class: ml,
+    values: $negative-spacer-map
+  ),
+  // ===
+  // Padding
+  // ===
+  "padding": (
+    responsive: true,
+    property: padding,
+    class: p,
+    values: $spacer-map
+  ),
+  "padding-x": (
+    responsive: true,
+    property: padding-right padding-left,
+    class: px,
+    values: $spacer-map
+  ),
+  "padding-y": (
+    responsive: true,
+    property: padding-top padding-bottom,
+    class: py,
+    values: $spacer-map
+  ),
+  "padding-top": (
+    responsive: true,
+    property: padding-top,
+    class: pt,
+    values: $spacer-map
+  ),
+  "padding-left": (
+    responsive: true,
+    property: padding-left,
+    class: pl,
+    values: $spacer-map
+  ),
+  "padding-bottom": (
+    responsive: true,
+    property: padding-bottom,
+    class: pb,
+    values: map-merge(
+        $spacer-map,
+        (
+          "button-bar": 6rem
+        )
+    )
+  ),
+  "padding-right": (
+    responsive: true,
+    property: padding-right,
+    class: pr,
+    values: $spacer-map
+  ),
+  // ===
+  // Opacity
+  // ===
+  'opacity': (
+    property: opacity,
+    values: (
+      0: 0,
+      25: .25,
+      50: .5,
+      75: .75,
+      100: 1,
+    )
+  ),
+  // ===
+  // Display
+  // ===
+  "display": (
+    responsive: true,
+    property: display,
+    class: d,
+    values: inline inline-block block grid table table-row table-cell flex inline-flex none
+  ),
+  // ===
+  // Color
+  // ===
+  "background-color": (
+    property: background-color,
+    class: bg,
+    values: map-merge(
+        $color-theme-map,
+        (
+          "transparent": transparent
+        )
+    )
+  ),
+  "color": (
+    property: color,
+    class: text,
+    values: map-merge(
+        $color-theme-map,
+        (
+          "reset": inherit,
+        )
+    )
+  ),
+  // ===
+  // Flex
+  // ===
+  "flex": (
+    responsive: true,
+    property: flex,
+    values: (fill: 1 1 auto)
+  ),
+  "flex-direction": (
+    responsive: true,
+    property: flex-direction,
+    class: flex,
+    values: row column row-reverse column-reverse
+  ),
+  "flex-grow": (
+    responsive: true,
+    property: flex-grow,
+    class: flex,
+    values: (
+      grow-0: 0,
+      grow-1: 1,
+    )
+  ),
+  "flex-shrink": (
+    responsive: true,
+    property: flex-shrink,
+    class: flex,
+    values: (
+      shrink-0: 0,
+      shrink-1: 1,
+    )
+  ),
+  "flex-wrap": (
+    responsive: true,
+    property: flex-wrap,
+    class: flex,
+    values: wrap nowrap wrap-reverse
+  ),
+  "gap": (
+    responsive: true,
+    property: gap,
+    class: gap,
+    values: $spacer-map
+  ),
+  "justify-content": (
+    responsive: true,
+    property: justify-content,
+    values: (
+      start: flex-start,
+      end: flex-end,
+      center: center,
+      between: space-between,
+      around: space-around,
+      evenly: space-evenly,
+    )
+  ),
+  "align-items": (
+    responsive: true,
+    property: align-items,
+    values: (
+      start: flex-start,
+      end: flex-end,
+      center: center,
+      baseline: baseline,
+      stretch: stretch,
+    )
+  ),
+  "align-content": (
+    responsive: true,
+    property: align-content,
+    values: (
+      start: flex-start,
+      end: flex-end,
+      center: center,
+      between: space-between,
+      around: space-around,
+      stretch: stretch,
+    )
+  ),
+  "align-self": (
+    responsive: true,
+    property: align-self,
+    values: (
+      auto: auto,
+      start: flex-start,
+      end: flex-end,
+      center: center,
+      baseline: baseline,
+      stretch: stretch,
+    )
+  ),
+  "order": (
+    responsive: true,
+    property: order,
+    values: (
+      first: -1,
+      0: 0,
+      1: 1,
+      2: 2,
+      3: 3,
+      4: 4,
+      5: 5,
+      last: 6,
+    ),
+  ),
+  // ===
+  // Width
+  // ===
+  "width": (
+    property: width,
+    class: w,
+    values: (
+      25: 25%,
+      50: 50%,
+      75: 75%,
+      100: 100%,
+      auto: auto
+    )
+  ),
+  "max-width": (
+    property: max-width,
+    class: mw,
+    values: (100: 100%)
+  ),
+  "viewport-width": (
+    property: width,
+    class: vw,
+    values: (100: 100vw)
+  ),
+  "min-viewport-width": (
+    property: min-width,
+    class: min-vw,
+    values: (100: 100vw)
+  ),
+  // ===
+  // Height
+  // ===
+  "height": (
+    property: height,
+    class: h,
+    values: (
+      25: 25%,
+      50: 50%,
+      75: 75%,
+      100: 100%,
+      auto: auto
+    )
+  ),
+  "max-height": (
+    property: max-height,
+    class: mh,
+    values: (100: 100%)
+  ),
+  "viewport-height": (
+    property: height,
+    class: vh,
+    values: (100: 100vh)
+  ),
+  "min-viewport-height": (
+    property: min-height,
+    class: min-vh,
+    values: (100: 100vh)
+  ),
+  // ===
+  // Font
+  // ===
+  'font-family': (
+    property: font-family,
+    class: font,
+    values: $font-family-map
+  ),
+  'font-size': (
+    rfs: true,
+    property: font-size,
+    class: fs,
+    values: $font-size-map
+  ),
+  'font-weight': (
+    rfs: true,
+    property: font-weight,
+    class: fw,
+    values: $font-weight-map
+  ),
+  "font-style": (
+    property: font-style,
+    class: fst,
+    values: italic normal
+  ),
+  "line-height": (
+    property: line-height,
+    class: lh,
+    values: (
+      1: 1,
+      sm: $line-height-sm,
+      base: $line-height-base,
+      lg: $line-height-lg,
+    )
+  ),
+  "text-align": (
+    responsive: true,
+    property: text-align,
+    class: text,
+    values: (
+      left: left,
+      right: right,
+      center: center,
+    )
+  ),
+  "text-decoration": (
+    property: text-decoration,
+    values: none underline line-through
+  ),
+  "text-transform": (
+    property: text-transform,
+    class: text,
+    values: lowercase uppercase capitalize
+  ),
+  "white-space": (
+    property: white-space,
+    class: text,
+    values: (
+      wrap: normal,
+      nowrap: nowrap,
+    )
+  ),
+  "word-wrap": (
+    property: word-wrap word-break,
+    class: text,
+    values: (break: break-word),
+    rtl: false
+  ),
+  // ===
+  // User Select
+  // ===
+  "user-select": (
+    property: user-select,
+    values: all auto none
+  ),
+  // ===
+  // Pointer Events
+  // ===
+  "pointer-events": (
+    property: pointer-events,
+    class: pe,
+    values: none auto,
+  ),
+  // ===
+  // Visibility
+  // ===
+  "visibility": (
+    property: visibility,
+    class: null,
+    values: (
+      visible: visible,
+      invisible: hidden,
+    )
+  ),
+  // ===
+  // Align
+  // ===
+  "align": (
+    property: vertical-align,
+    class: align,
+    values: baseline top middle bottom text-bottom text-top
+  ),
+  // ===
+  // Float
+  // ===
+  "float": (
+    responsive: true,
+    property: float,
+    values: (
+      left: left,
+      right: right,
+      none: none,
+    )
+  ),
+  // ===
+  // Overflow
+  // ===
+  "overflow": (
+    property: overflow,
+    values: auto hidden visible scroll,
+  ),
+  // ===
+  // Shadow
+  // ===
+  /* "shadow": (
+    property: box-shadow,
+    class: shadow,
+    values: (
+      null: $box-shadow,
+      sm: $box-shadow-sm,
+      lg: $box-shadow-lg,
+      none: none,
+    )
+  ), */
+  // ===
+  // Position
+  // ===
+  "position": (
+    property: position,
+    values: static relative absolute fixed sticky
+  ),
+  "top": (
+    property: top,
+    values: $position-value-map
+  ),
+  "bottom": (
+    property: bottom,
+    values: $position-value-map
+  ),
+  "start": (
+    property: left,
+    class: start,
+    values: $position-value-map
+  ),
+  "end": (
+    property: right,
+    class: end,
+    values: $position-value-map
+  ),
+  // ===
+  // Translate
+  // ===
+  "translate-middle": (
+    property: transform,
+    class: translate-middle,
+    values: (
+      null: translate(-50%, -50%),
+      x: translateX(-50%),
+      y: translateY(-50%),
+    )
+  ),
+  // ===
+  // Border
+  // ===
+  "border": (
+    property: border,
+    values: (
+      null: 1px solid transparent,
+      0: 0,
+    )
+  ),
+  "border-top": (
+    property: border-top,
+    values: (
+      null: 1px solid transparent,
+      0: 0,
+    )
+  ),
+  "border-end": (
+    property: border-right,
+    class: border-end,
+    values: (
+      null: 1px solid transparent,
+      0: 0,
+    )
+  ),
+  "border-bottom": (
+    property: border-bottom,
+    values: (
+      null: 1px solid transparent,
+      0: 0,
+    )
+  ),
+  "border-start": (
+    property: border-left,
+    class: border-start,
+    values: (
+      null: 1px solid transparent,
+      0: 0,
+    )
+  ),
+  "border-color": (
+    property: border-color,
+    class: border,
+    values: $color-theme-map
+  ),
+  "border-width": (
+    property: border-width,
+    class: border,
+    values: $border-width-map
+  ),
+  // ===
+  // Rounded
+  // ===
+  "rounded": (
+    property: border-radius,
+    class: rounded,
+    values: (
+      null: $border-radius,
+      0: 0,
+      1: $border-radius-sm,
+      2: $border-radius,
+      3: $border-radius-lg,
+      circle: 50%,
+      pill: $border-radius-pill
+    )
+  ),
+  "rounded-top": (
+    property: border-top-left-radius border-top-right-radius,
+    class: rounded-top,
+    values: (null: $border-radius)
+  ),
+  "rounded-end": (
+    property: border-top-right-radius border-bottom-right-radius,
+    class: rounded-end,
+    values: (null: $border-radius)
+  ),
+  "rounded-bottom": (
+    property: border-bottom-right-radius border-bottom-left-radius,
+    class: rounded-bottom,
+    values: (null: $border-radius)
+  ),
+  "rounded-start": (
+    property: border-bottom-left-radius border-top-left-radius,
+    class: rounded-start,
+    values: (null: $border-radius)
+  ),
+);

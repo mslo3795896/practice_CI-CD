@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#ABCD03">
+    <!--<meta name="google-site-verification" content="EKZEXgektbTDebKTGlb1djO8C7iVxfUa0M0jxc07eu0" />-->
+    <meta name="google-site-verification" content="B8g0kJMyJkM-GiLjycAOhOIMUNvKZ3-TG21s_xthRho" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-B9BoFFAuBaCfqw6lxWBZrhg/z4NkwqdBci+E+Sc2XlK/Rz25RYn8Fetb+Aw5irxa" crossorigin="anonymous">
+    <script>
+      window.globalData = {};
+      window.globalData.APP_ENV = "{{ config('app.env') }}";
+    </script>
+
+    <link rel="shortcut icon" href="/favicon.ico"/>
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ Request::url() }}">
+    <meta name="twitter:card" content="summary" />
+
+    <!--title-->
+    <title>零壹科技 Zero One Tech. | 前台接待</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
