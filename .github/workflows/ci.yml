@@ -25,6 +25,11 @@ jobs:
         npm i
         npm run build
 
+    - name: Check Build dir
+      run: |
+        cd ../public
+        ls -all
+
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@4.1.7
       with:
