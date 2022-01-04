@@ -27,7 +27,7 @@ jobs:
 
     - name: Check Build dir
       run: |
-        cd ../public
+        # cd ../public
         ls -all
 
     - name: Deploy
