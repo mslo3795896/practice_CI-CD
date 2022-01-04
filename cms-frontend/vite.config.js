@@ -38,7 +38,7 @@ export default defineConfig({
         //  --emptyOutDir 會把 public 底下的其他重要的檔案清除，所以改用 plugin 清除特定目錄
         del({ targets: `../public/${bundleDir}/*`, force: true }),
         // 將多餘的 index.html 刪除
-        del({ targets: `../public/index.html`, force: true, hook: 'closeBundle' }),
+        // del({ targets: `../public/index.html`, force: true, hook: 'closeBundle' }),
         /* https://github.com/vladshcherbin/rollup-plugin-copy */
         copy({
           targets: [
