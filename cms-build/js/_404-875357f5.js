@@ -1,0 +1,2 @@
+import n from"./main-61010287.js";import{_ as a}from"./index-9ec1f801.js";import{j as c,o as r,k as _,w as d,l as o,q as l}from"./vendor-c6516222.js";const i="_notFound_1f6ie_1";var u={notFound:i};const p={components:{Layout:n}},m=o("div",{class:"container"}," 404 ",-1),f=[m];function y(t,$,v,h,j,x){const e=c("Layout");return r(),_(e,null,{default:d(()=>[o("section",{class:l(t.$style.notFound)},f,2)]),_:1})}const s={};s.$style=u;var C=a(p,[["render",y],["__cssModules",s]]);export{C as default};
+//# sourceMappingURL=_404-875357f5.js.map
