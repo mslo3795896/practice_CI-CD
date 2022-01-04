@@ -37,8 +37,8 @@ jobs:
 
     - name: Build and Deploy
       uses: JamesIves/github-pages-deploy-action@4.1.7
-      env:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+      with:
         BRANCH: gh-pages
         FOLDER: dist
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BUILD_SCRIPT: cd cms-frontend && npm i && npm run build
