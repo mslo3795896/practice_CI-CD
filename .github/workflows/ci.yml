@@ -26,9 +26,9 @@ jobs:
         npm run build
 
     - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.7
-        with:
-          branch: gh-pages
-          folder: ../public
-          token: ${{ secrets.ACCESS_TOKEN }}
-          # BUILD_SCRIPT: cd cms-frontend && npm i && npm run build
+      uses: JamesIves/github-pages-deploy-action@4.1.7
+      with:
+        branch: gh-pages
+        folder: ../public
+        token: ${{ secrets.ACCESS_TOKEN }}
+        # BUILD_SCRIPT: cd cms-frontend && npm i && npm run build
