@@ -12,27 +12,27 @@ jobs:
         node-version: [12.x]
     steps:
     - name: Checkout
-      uses: actions/checkout@master
+      uses: actions/checkout@v2
 
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@master
       with:
         node-version: ${{ matrix.node-version }}
 
-    - name: Install And Build
-      run: |
-        cd cms-frontend
-        npm i
-        npm run build
+    # - name: Install And Build
+    #   run: |
+    #     cd cms-frontend
+    #     npm i
+    #     npm run build
 
-    - name: Check Build dir
-      run: |
-        cd public
-        ls -all
+    # - name: Check Build dir
+    #   run: |
+    #     cd public
+    #     ls -all
 
-    - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@4.1.7
-      with:
-        branch: master
-        folder: .
-        token: ${{ secrets.ACCESS_TOKEN }}
+    # - name: Deploy
+    #   uses: JamesIves/github-pages-deploy-action@4.1.7
+    #   with:
+    #     branch: demo-site
+    #     folder: .
+    #     token: ${{ secrets.ACCESS_TOKEN }}
