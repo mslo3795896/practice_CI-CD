@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/mslo3795896/practice_CI-CD/compare/v1.1.0...v1.1.1) (2022-01-05)
+
+
+### Bug Fixes
+
+* test ([de7d88f](https://github.com/mslo3795896/practice_CI-CD/commit/de7d88f93ba7a96c9055d40a910f66ee2d295f70))
+
 # [1.1.0](https://github.com/mslo3795896/practice_CI-CD/compare/v1.0.0...v1.1.0) (2022-01-05)
 
 
