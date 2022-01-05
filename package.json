@@ -1,0 +1,18 @@
+{
+  "name": "hello-world",
+  "version": "0.0.0-development",
+  "private": true,
+  "dependencies": {
+    "semantic-release": "^18.0.1"
+  },
+  "scripts": {
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mslo3795896/practice_CI-CD.git"
+  },
+  "devDependencies": {
+    "semantic-release": "^18.0.1"
+  }
+}
