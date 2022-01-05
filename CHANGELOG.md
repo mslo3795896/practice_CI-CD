@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/mslo3795896/practice_CI-CD/compare/v1.0.0...v1.1.0) (2022-01-05)
+
+
+### Features
+
+* update README.md ([99c1c5e](https://github.com/mslo3795896/practice_CI-CD/commit/99c1c5e571cbf7fd20f63446905c9846b505c78e))
+
 # 1.0.0 (2022-01-05)
 
 
