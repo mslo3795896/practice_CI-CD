@@ -1,3 +1,11 @@
+## [1.1.2](https://github.com/mslo3795896/practice_CI-CD/compare/v1.1.1...v1.1.2) (2022-01-06)
+
+
+### Bug Fixes
+
+* test auto release ([3ea74cc](https://github.com/mslo3795896/practice_CI-CD/commit/3ea74cc0616dbe49e5d33d67c1fcde5831366564))
+* test auto release ([c06dba3](https://github.com/mslo3795896/practice_CI-CD/commit/c06dba3eded4d92d2264589db926e42a8ebc534c))
+
 ## [1.1.1](https://github.com/mslo3795896/practice_CI-CD/compare/v1.1.0...v1.1.1) (2022-01-05)
 
 
