@@ -10,11 +10,6 @@
           "npmPublish": false
         }
       ],
-      [
-        "@semantic-release/git",
-        {
-          "message": "release ${nextRelease.version}"
-        }
-      ]
+      "@semantic-release/github"
     ]
   }
